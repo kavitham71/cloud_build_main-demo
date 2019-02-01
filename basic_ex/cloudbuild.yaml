@@ -1,0 +1,12 @@
+steps:
+- name: 'ubuntu:xenial'
+  args: ['sleep', '2']
+  timeout: 500s
+- name: 'alpine'
+  args: ['echo', 'hello world, after 600s']
+- name: 'ubuntu:trusty'
+  args: ['echo', 'trusty image, after 600s']
+tags: ['mytag1'] 
+ 
+
+

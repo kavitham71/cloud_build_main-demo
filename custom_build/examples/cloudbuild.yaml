@@ -1,0 +1,5 @@
+steps:
+- name: gcr.io/$PROJECT_ID/remote-builder
+  waitFor: ["-"]
+  args: ['echo', "This is the file in examples folder"]
+ 

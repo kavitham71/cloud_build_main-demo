@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/remote-builder', '.' ]
-  dir: 'custom_build'
+  dir: 'custom_build' # mentioning bcz, search Dockerfile in this location.
 images:
 - 'gcr.io/$PROJECT_ID/remote-builder'

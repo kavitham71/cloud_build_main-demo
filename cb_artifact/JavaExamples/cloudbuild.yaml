@@ -5,4 +5,4 @@ steps:
 artifacts:
   objects:
     location: 'gs://artifact_bucket/'
-    paths: ['JavaExamples/HelloWorld.class']
+    paths: ['cb_artifact/JavaExamples/HelloWorld.class']

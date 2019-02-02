@@ -1,0 +1,17 @@
+steps:
+ - name: 'gcr.io/cloud-builders/javac'
+   args: ['Helloworld.java']
+ - name: 'ubuntu'
+   args: ['echo', '${_VARIABLE1} ${_VARIABLE2}']
+ - name: 'ubuntu'
+   args: ['echo', '$_AB']
+substitutions:
+  _VARIABLE1: welcome
+  _VARIABLE2: Kavitha
+artifacts:
+  objects:
+    location: 'gs://artifact_bucket/'
+    paths: ['HelloWorld.class']
+options:
+    substitution_option: 'ALLOW_LOOSE'
+

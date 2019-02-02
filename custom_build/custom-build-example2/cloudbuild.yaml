@@ -1,9 +1,10 @@
 steps:
 - name: 'ubuntu'
   args: ['bash', './myscript.bash']
-  dir: 'custom-build-example2'
+  dir: 'custom_build/custom-build-example2' # For script location
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/custom-script-test', '.']
+  dir: 'custom_build/custom-build-example2'
 images: ['gcr.io/$PROJECT_ID/custom-script-test']
 
 

@@ -11,7 +11,7 @@ substitutions:
 artifacts:
   objects:
     location: 'gs://artifact_bucket/'
-    paths: ['HelloWorld.class']
+    paths: ['cb_artifact/secondEx/HelloWorld.class']
 options:
     substitution_option: 'ALLOW_LOOSE'
 

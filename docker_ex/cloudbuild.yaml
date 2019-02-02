@@ -1,8 +1,7 @@
 steps:
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['build', '-t', 'gcr.io/cloud-build-demo-230104/my-image1']
+   args: ['build', '-t', 'gcr.io/cloud-build-demo-230104/my-image1', '.']
    dir: docker_ex
  - name: 'gcr.io/cloud-builders/docker'
    args: ['push', 'gcr.io/cloud-build-demo-230104/my-image1']
 tags: ['mytag1']
-

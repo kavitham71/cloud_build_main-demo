@@ -1,6 +1,7 @@
 steps:
  - name: 'gcr.io/cloud-builders/javac'
    args: ['Helloworld.java']
+   dir: 'cb_artifact/secondEx'
  - name: 'ubuntu'
    args: ['echo', '${_VARIABLE1} ${_VARIABLE2}']
  - name: 'ubuntu'

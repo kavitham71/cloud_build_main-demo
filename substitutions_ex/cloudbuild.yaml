@@ -2,7 +2,7 @@ steps:
  - name: 'ubuntu'
    args: ['echo', '${_VARIABLE1} ${_VARIABLE2}']
  - name: 'ubuntu'
-   args: ['echo', '$_AB']
+   args: ['echo', 'hello $_AB']
 substitutions:
   _VARIABLE1: welcome
   _VARIABLE2: Kavitha

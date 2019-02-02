@@ -1,7 +1,4 @@
 steps:
- - name: 'gcr.io/cloud-builders/javac'
-   args: ['Helloworld.java']
-   dir: 'cb_artifact/secondEx'
  - name: 'ubuntu'
    args: ['echo', '${_VARIABLE1} ${_VARIABLE2}']
  - name: 'ubuntu'
@@ -9,10 +6,7 @@ steps:
 substitutions:
   _VARIABLE1: welcome
   _VARIABLE2: Kavitha
-artifacts:
-  objects:
-    location: 'gs://artifact_bucket/'
-    paths: ['cb_artifact/secondEx/HelloWorld.class']
 options:
     substitution_option: 'ALLOW_LOOSE'
 
+# [if you put "Allow_LOOSE" buy using options , it won't give any error if nay mistake in substitute variable.]

@@ -5,7 +5,7 @@ steps:
    - '-c'
    - |
      docker pull gcr.io/$PROJECT_ID/[IMAGE_NAME]:latest || exit 0
-   dir: speed_cache
+  # dir: speed_cache
 - name: 'gcr.io/cloud-builders/docker'
   args: [
             'build',
